@@ -1,8 +1,5 @@
 name: iris-feature-and-prediction-pipelines
 
-- name: Check Runner Platform
-  run: echo "Runner platform: ${{ runner.os }}"
-
 on:
   workflow_dispatch:
   schedule:
@@ -14,6 +11,10 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
+
+      # Add the step to check runner platform here
+      - name: Check Runner Platform
+        run: echo "Runner platform: ${{ runner.os }}"
 
       - name: setup python
         uses: actions/setup-python@v2
