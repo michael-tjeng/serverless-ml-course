@@ -19,8 +19,9 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8.1'
+          python-version: '3.8.0'
           architecture: 'x64'
+          clear-caches: true
           
       - name: install python packages
         run: |
