@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: '3.8.1'
           architecture: 'x64'
-          platform: 'linux-20.04'
           
       - name: install python packages
         run: |
