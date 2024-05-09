@@ -1,5 +1,8 @@
 name: iris-feature-and-prediction-pipelines
 
+- name: Check Runner Platform
+  run: echo "Runner platform: ${{ runner.os }}"
+
 on:
   workflow_dispatch:
   schedule:
