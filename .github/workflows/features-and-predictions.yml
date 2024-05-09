@@ -14,7 +14,7 @@ jobs:
 
       # Add the step to check runner platform here
       - name: Check Runner Platform
-        run: echo "Runner platform: ${{ runner.os }}"
+        run: echo "Runner platform:${{runner.os}}"
 
       - name: setup python
         uses: actions/setup-python@v2
